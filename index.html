@@ -1,1 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Perfil Profissional</title>
+  <meta name="description" content="Perfil profissional com habilidades e formação acadêmica.">
 
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style type="text/tailwindcss">
+    @layer components {
+      .caixa {
+        @apply border border-gray-300 p-4 rounded bg-white shadow-sm;
+      }
+    }
+  </style>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+  <header class="bg-white p-6 border-b border-gray-200">
+    <div class="max-w-4xl mx-auto flex flex-col md:flex-row items-center gap-6">
+      <figure class="flex flex-col items-center">
+        <img src="minha-foto.png" alt="Foto de perfil de Samuel Levi" 
+          class="w-36 h-36 rounded-full object-cover border border-gray-300">
+        <figcaption class="text-center text-sm text-gray-500 mt-2">Foto de perfil</figcaption>
+      </figure>
+
+      <div class="text-center md:text-left">
+        <h1 class="text-3xl font-bold">Samuel Levi</h1>
+        <p class="text-gray-600">Estudante de Análise e Desenvolvimento de Sistemas</p>
+      </div>
+    </div>
+  </header>
+
+  <main class="max-w-4xl mx-auto p-6 space-y-6">
+
+    <section class="bg-white p-6 rounded border border-gray-200">
+      <h2 class="text-2xl font-bold mb-4">Habilidades</h2>
+      
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
+        <div class="caixa">
+          <h3 class="font-bold">HTML Semântico</h3>
+          <p class="text-sm text-gray-600">Criação de páginas estruturadas e bem formatadas.</p>
+        </div>
+
+        <div class="caixa">
+          <h3 class="font-bold">Desenvolvimento Web</h3>
+          <p class="text-sm text-gray-600">Estudo de tecnologias modernas para a web.</p>
+        </div>
+
+        <div class="caixa">
+          <h3 class="font-bold">Git e GitHub</h3>
+          <p class="text-sm text-gray-600">Controle de versão e hospedagem de projetos.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-white p-6 rounded border border-gray-200">
+      <h2 class="text-2xl font-bold mb-4">Formação Acadêmica</h2>
+      
+      <div class="overflow-x-auto">
+        <table class="w-full max-w-md border-collapse border border-gray-300 text-left">
+          <caption class="text-sm text-gray-500 mb-2 font-bold text-left">Cursos e Formações</caption>
+          <thead>
+            <tr class="bg-gray-100 border-b border-gray-300">
+              <th scope="col" class="border border-gray-300 p-2">Curso</th>
+              <th scope="col" class="border border-gray-300 p-2">Instituição</th>
+              <th scope="col" class="border border-gray-300 p-2">Ano</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row" class="border border-gray-300 p-2 font-normal">ADS</th>
+              <td class="border border-gray-300 p-2">IFPE</td>
+              <td class="border border-gray-300 p-2">2026</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="bg-white p-6 text-center border-t border-gray-200 mt-6">
+    <p class="text-gray-600">Contato: samuell_levi@hotmail.com</p>
+  </footer>
+
+</body>
+</html>
